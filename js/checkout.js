@@ -164,7 +164,12 @@ function showProductBuyNow(product) {
     </div>`;
     listOrder.innerHTML = listOrderHtml;
 }
+///Chuyển trang khi ấn thêm món 
+let nutThemMon = document.querySelector('.them-mon');
 
+nutThemMon.addEventListener('click', () => {
+    window.location.href = 'menu.html';
+});
 //Open Page Checkout
 let nutthanhtoan = document.querySelector('.thanh-toan')
 let checkoutpage = document.querySelector('.checkout-page');
