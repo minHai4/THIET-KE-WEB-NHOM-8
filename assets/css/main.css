@@ -460,13 +460,13 @@ header {
 }
 
 .menu-link {
-      font-weight: bold;
-      text-decoration: none;
-      color: rgb(2, 2, 2);
-      padding: 10px 20px;
-      border-radius: 20px;
-      transition: 0.3s;
-      display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    display: inline-block;
 }
 
 .menu-link:hover::after {
@@ -492,14 +492,16 @@ header {
 }
 
 .menu-link.active {
+
     background-color: #fce9ed;
     color: #e31837 !important;
-  }
+    margin-top: 4px;
+}
 
-  .menu-link:hover {
+.menu-link:hover {
     background-color: #fce9ed;
     color: #cc1f2f !important;
-  }
+}
 
 .advanced-search {
     background-color: var(--white);
@@ -637,7 +639,7 @@ header {
 }
 
 .home-title {
-    font-weight: 600;
+    font-weight: 900;
     text-align: center;
     font-size: 21px;
     position: relative;
