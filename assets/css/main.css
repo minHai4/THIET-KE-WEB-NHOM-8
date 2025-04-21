@@ -2481,9 +2481,4 @@ p {
     margin: 10px 0;  
     font-size: 0.9em; /* Kích thước chữ mô tả */  
 }  
-span {  
-    font-size: 0.8em;  
-    color: #999;  
-    margin: 10px 0;  
-    display: block;  
-} 
+
