@@ -2471,11 +2471,6 @@ h2 {
     object-fit: cover; /* Đảm bảo hình ảnh vừa khít */  
     border-radius: 8px; /* Bo góc cho hình ảnh */  
 }  
-h3 {  
-    color: #333;  
-    margin: 10px 0;  
-    font-size: 1.2em; /* Kích thước chữ tiêu đề */  
-}  
 p {  
     color: #555;  
     margin: 10px 0;  
