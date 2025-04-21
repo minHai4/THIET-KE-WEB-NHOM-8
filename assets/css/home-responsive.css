@@ -301,3 +301,17 @@
         /* giảm nhẹ cỡ chữ nếu cần cho vừa khít */
     }
 }
+@media (min-width: 769px) {
+  .promo-carousel {
+    display: none;
+  }
+  .promo-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .promo-grid .promo-box {
+    width: 350px;
+  }
+}
