@@ -2437,3 +2437,53 @@ input[type=number] {
 .dot.active {
     background-color: #f58220; /* Màu nền cam cho dot đang hoạt động */
   }
+.tin-tuc {  
+    max-width: 1200px;  
+    margin: 0 auto;  
+    padding: 50px; 
+}  
+h2 {  
+    text-align: center;  
+    color: #e72c2c;  
+    padding: 20px;
+}  
+.grid {  
+    display: flex; /* Sử dụng Flexbox */  
+    justify-content:space-around; /* Đảm bảo khoảng cách đồng đều */  
+    flex-wrap: wrap; /* Cho phép xuống hàng */  
+    gap: 10px; /* Giảm khoảng cách giữa các bài viết */  
+}  
+.bai-viet {  
+    flex: 1 1 calc(25% - 10px); /* 4 bài trên một hàng */  
+    max-width: 300px; /* Chiều rộng tối đa cho mỗi bài viết */  
+    text-align: center;  
+    padding: 15px;  
+    transition: transform 0.2s;  
+    border-radius: 8px;  
+    background: #ffffff;  
+}  
+.bai-viet:hover {  
+    transform: scale(1.02);  
+}  
+.bai-viet img {  
+    max-width: 100%;  
+    height: 200px; /* Chiều cao hình ảnh */  
+    object-fit: cover; /* Đảm bảo hình ảnh vừa khít */  
+    border-radius: 8px; /* Bo góc cho hình ảnh */  
+}  
+h3 {  
+    color: #333;  
+    margin: 10px 0;  
+    font-size: 1.2em; /* Kích thước chữ tiêu đề */  
+}  
+p {  
+    color: #555;  
+    margin: 10px 0;  
+    font-size: 0.9em; /* Kích thước chữ mô tả */  
+}  
+span {  
+    font-size: 0.8em;  
+    color: #999;  
+    margin: 10px 0;  
+    display: block;  
+} 
