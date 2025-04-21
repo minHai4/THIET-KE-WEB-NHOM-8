@@ -2367,3 +2367,73 @@ input[type=number] {
 .header-middle-right-item.close {
     display: none;
 }
+.banner-container {
+    position: relative;
+    width: 100%;
+    max-width:max-content;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+
+  .slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    height:auto;
+  }
+
+  .button-link {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fbc02d;
+    color: white;
+    font-weight: bold;
+    padding: 14px 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 10;
+  }
+
+  .button-link:hover {
+    background-color: #f57f17;
+  }
+
+  .dots {
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    z-index: 10;
+  }
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: transparent; /* Đổi màu nền thành trong suốt */
+  border: 2px solid #f58220; /* Thêm viền cam cho dễ nhìn */
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+.dot.active {
+    background-color: #f58220; /* Màu nền cam cho dot đang hoạt động */
+  }
