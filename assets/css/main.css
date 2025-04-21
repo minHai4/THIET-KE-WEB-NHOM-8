@@ -2463,6 +2463,7 @@ h2 {
     background: #ffffff;  
 }  
 .bai-viet:hover {  
+    background-color: rgb(241, 241, 241);
     transform: scale(1.02);  
 }  
 .bai-viet img {  
