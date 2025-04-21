@@ -1043,20 +1043,3 @@ function animateOnScroll() {
 }
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
-///Chạy phần Khuyến mại 
-const track = document.querySelector('.carousel-track');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-let currentIndex = 0;
-const totalSlides = document.querySelectorAll('.promo-box').length;
-function updateCarousel(index) {
-  track.style.transform = `translateX(-${index * 100}%)`;
-}
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-  updateCarousel(currentIndex);
-});
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % totalSlides;
-  updateCarousel(currentIndex);
-});

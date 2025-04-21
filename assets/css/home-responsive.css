@@ -47,27 +47,61 @@
 }
 
 /* khuyenmai */
-.home-product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow-x: unset;
-}
+/* @media (min-width: 768px) {
+    .promo-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1200px;
+        overflow: visible;
+    }
 
-.home-product-item {
-    width: calc(33.333% - 20px);
-    margin-bottom: 20px;
-}
+    .promo-container .promo-box {
+        width: 100%;
+    }
 
-@media (max-width: 768px) {
-    .home-product-item {
-        width: calc(50% - 20px);
+    .carousel-controls {
+        display: none;
     }
 }
 
-@media (max-width: 480px) {
-    .home-product-item {
-        width: 100%;
+@media (max-width: 767px) {
+    .promo-container {
+        display: flex;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+    }
+
+    .promo-box {
+        scroll-snap-align: start;
+        margin-right: 15px;
+    }
+
+    .promo-container::-webkit-scrollbar {
+        display: none;
+    }
+} */
+.promo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    overflow: visible;
+}
+
+.promo-box {
+    width: 100%;
+}
+
+@media (max-width: 1120px) {
+    .promo-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .promo-box {
+        width: calc(50% - 20px);
     }
 }
 
