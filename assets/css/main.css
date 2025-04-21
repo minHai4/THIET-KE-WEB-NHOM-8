@@ -2456,11 +2456,6 @@ input[type=number] {
     flex-wrap: wrap; /* Cho phép xuống hàng */  
     gap: 5px; /* Giảm khoảng cách giữa các bài viết */  
 }  
-h2 {  
-    text-align: center;  
-    color: #e72c2c;  
-    padding:20px;
-}  
 .bai-viet {  
     flex: 1 1 calc(25% - 5px); /* 4 bài trên một hàng */  
     max-width: 240px; /* Giảm chiều rộng tối đa cho mỗi bài viết */  
