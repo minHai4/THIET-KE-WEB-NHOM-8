@@ -484,7 +484,6 @@ loginButton.addEventListener('click', () => {
                 toast({ title: 'Success', message: 'Đăng nhập thành công', type: 'success', duration: 3000 });
                 closeModal();
                 kiemtradangnhap();
-                checkAdmin();
                 updateAmount();
             }
         } else {
@@ -520,17 +519,7 @@ function logOut() {
     window.location = "/";
 }
 
-function checkAdmin() {
-    let user = JSON.parse(localStorage.getItem('currentuser'));
-    if (user && user.userType == 1) {
-        let node = document.createElement(`li`);
-        node.innerHTML = `<a href="./admin.html"><i class="fa-light fa-gear"></i> Quản lý cửa hàng</a>`
-        document.querySelector('.header-middle-right-menu').prepend(node);
-    }
-}
-
 window.onload = kiemtradangnhap();
-window.onload = checkAdmin();
 
 // Chuyển đổi trang chủ và trang thông tin tài khoản
 function myAccount() {
