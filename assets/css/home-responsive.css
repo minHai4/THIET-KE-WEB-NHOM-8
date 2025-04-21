@@ -376,3 +376,15 @@
       bottom: 5px; /* Điều chỉnh vị trí của dots */
     }
   }
+/* Responsive cho tin tức */
+@media (max-width: 1024px) {  
+    .bai-viet {  
+        flex: 1 1 calc(50% - 20px); /* Hai bài trên một hàng */  
+    }  
+}  
+
+@media (max-width: 600px) {  
+    .bai-viet {  
+        flex: 1 1 100%; /* Một bài trên một hàng */  
+    }  
+}  
