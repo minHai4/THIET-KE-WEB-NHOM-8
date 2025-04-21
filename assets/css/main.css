@@ -2442,28 +2442,20 @@ input[type=number] {
     margin: 0 auto;  
     padding: 50px; 
 }  
-.tin-tuc {  
-    max-width: 1200px;  
-    margin: 0 auto;  
-    padding: 20px;  
-    background: #ffffff;  
-    border-radius: 8px;  
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
-}  
-.grid {  
-    display: flex; /* Sử dụng Flexbox */  
-    justify-content: space-around; /* Đảm bảo khoảng cách đồng đều */  
-    flex-wrap: wrap; /* Cho phép xuống hàng */  
-    gap: 5px; /* Giảm khoảng cách giữa các bài viết */  
-}  
 h2 {  
     text-align: center;  
     color: #e72c2c;  
-    padding:20px;
+    padding: 20px;
+}  
+.grid {  
+    display: flex; /* Sử dụng Flexbox */  
+    justify-content:space-around; /* Đảm bảo khoảng cách đồng đều */  
+    flex-wrap: wrap; /* Cho phép xuống hàng */  
+    gap: 10px; /* Giảm khoảng cách giữa các bài viết */  
 }  
 .bai-viet {  
-    flex: 1 1 calc(25% - 5px); /* 4 bài trên một hàng */  
-    max-width: 240px; /* Giảm chiều rộng tối đa cho mỗi bài viết */  
+    flex: 1 1 calc(25% - 10px); /* 4 bài trên một hàng */  
+    max-width: 300px; /* Chiều rộng tối đa cho mỗi bài viết */  
     text-align: center;  
     padding: 15px;  
     transition: transform 0.2s;  
@@ -2478,6 +2470,11 @@ h2 {
     height: 200px; /* Chiều cao hình ảnh */  
     object-fit: cover; /* Đảm bảo hình ảnh vừa khít */  
     border-radius: 8px; /* Bo góc cho hình ảnh */  
+}  
+h3 {  
+    color: #333;  
+    margin: 10px 0;  
+    font-size: 1.2em; /* Kích thước chữ tiêu đề */  
 }  
 p {  
     color: #555;  
