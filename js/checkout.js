@@ -133,6 +133,9 @@ function thanhtoanpage(option,product) {
                 xulyDathang(product);
                 break;
         }
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 1000);
     }
 }
 
